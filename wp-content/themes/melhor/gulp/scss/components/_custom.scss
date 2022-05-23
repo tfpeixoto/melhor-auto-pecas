@@ -1,7 +1,30 @@
 // Fonts
-$font: "Cairo", sans-serif;
+$font: Cairo, sans-serif;
 
 // Colors
-$primary: #0C3378;
-$secondary: #F86905;
-$default: #60666E;
+$primary: #0c3378;
+$secondary: #f86905;
+$default: #60666e;
+
+body {
+  color: $default;
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.btn {
+  background: $primary;
+  border-radius: 0;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.25s;
+
+  &:hover {
+    color: white;
+    opacity: 0.75;
+    transform: scale(1.1, 1.1);
+  }
+}

@@ -1,0 +1,54 @@
+.cta {
+  padding: 5rem 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__frase {
+    p {
+      color: $primary;
+      font-size: 1.5rem;
+      font-weight: 800;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      border: 0;
+      display: inline-flex;
+      padding: 0;
+
+      &__label {
+        padding: 1rem 1.5rem;
+      }
+
+      &__icon {
+        background: $secondary;
+        display: block;
+        height: 100%;
+        padding: 1rem;
+        min-width: 50px;
+
+        .icon {
+          fill: white;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

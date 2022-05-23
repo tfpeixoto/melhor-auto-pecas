@@ -1,8 +1,90 @@
-.header{
-  .header__menu{
-    a{
+.header {
+  .header__menu {
+    a {
       color: $primary;
       font-weight: 600;
+      transition: all ease-in-out .25s;
+
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+
+  &__contact {
+    ul {
+      display: inline-flex;
+      margin-bottom: 0;
+      padding-inline-start: 0;
+
+      li {
+        list-style: none;
+        padding: 0 1rem;
+
+        a {
+          color: $primary;
+          font-size: 1rem;
+          font-weight: 800;
+          text-decoration: none;
+          transition: all ease-in-out .25s;
+
+          &:hover{
+            color: $secondary;
+
+            svg{
+              fill: $secondary;
+            }
+          }
+
+          svg {
+            fill: $primary;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu {
+    flex-grow: initial !important;
+
+    a {
+      text-transform: uppercase;
+      transition: all ease-in-out .25s;
+
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+
+  &__cta {
+    align-items: center;
+
+    .btn {
+      border: 0;
+      display: inline-flex;
+      font-size: 1rem;
+      padding: 0;
+
+      &__label {
+        padding: 1rem 1.5rem;
+      }
+
+      &__icon {
+        background: $secondary;
+        display: block;
+        height: 100%;
+        padding: 1rem;
+        min-width: 50px;
+
+        .icon {
+          fill: white;
+          height: 1rem;
+          width: 1rem;
+        }
+      }
     }
   }
 }

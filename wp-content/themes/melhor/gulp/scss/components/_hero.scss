@@ -1,5 +1,48 @@
 .hero {
-  .hero__image {
+  &__puv {
+    h1 {
+      color: $secondary;
+      font-size: 3.75rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+
+    .btn {
+      border: 0;
+      display: inline-flex;
+      padding: 0;
+
+      &__label{
+        padding: 1rem 1.5rem;
+      }
+
+      &__icon {
+        background: $secondary;
+        display: block;
+        height: 100%;
+        padding: 1rem;
+        min-width: 50px;
+
+        .icon {
+          fill: white;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__image {
     img {
       height: auto;
       max-width: 100%;

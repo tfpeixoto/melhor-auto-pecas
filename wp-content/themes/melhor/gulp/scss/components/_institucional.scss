@@ -1,0 +1,110 @@
+.institucional {
+  color: $default;
+  font-size: 1.5rem;
+  margin: 100px 0;
+
+  &__imagem {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__conteudo {
+    h2 {
+      color: $secondary;
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 1.4;
+      padding-bottom: 1rem;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      border: 0;
+      display: inline-flex;
+      margin-bottom: 50px;
+      padding: 0;
+
+      &__label {
+        padding: 1rem 1.5rem;
+      }
+
+      &__icon {
+        background: $secondary;
+        display: block;
+        height: 100%;
+        padding: 1rem;
+        min-width: 50px;
+
+        .icon {
+          fill: white;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .conversao {
+    background: $secondary;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      padding: 5rem;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 2.75rem;
+      font-weight: 800;
+    }
+
+    &__contatos {
+      align-self: center;
+
+      ul {
+        padding-inline-start: 0;
+        line-height: 2;
+        text-align: center;
+
+        li {
+          list-style: none;
+
+          a {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            transition: all ease-in-out 0.25s;
+
+            &:hover {
+              color: $primary;
+
+              svg {
+                fill: $primary;
+              }
+            }
+
+            svg {
+              fill: white;
+              height: 2rem;
+              margin-right: 0.5rem;
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

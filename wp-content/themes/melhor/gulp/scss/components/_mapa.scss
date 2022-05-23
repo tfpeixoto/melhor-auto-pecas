@@ -1,0 +1,67 @@
+.mapa {
+  background: #f2f2f2;
+
+  iframe {
+    height: 675px;
+    width: 100%;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  &__box {
+    background: $primary;
+    color: white;
+    line-height: 1.4;
+    padding: 3rem 2rem;
+    position: absolute;
+    left: 0;
+    top: -500px;
+
+    h3 {
+      font-weight: 800;
+
+      &:nth-child(2) {
+        margin-top: 2rem;
+      }
+    }
+
+    a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: underline;
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+
+        svg {
+          fill: $secondary;
+        }
+      }
+
+      svg {
+        fill: white;
+        height: 1.5rem;
+        margin-right: 0.25rem;
+        transition: all ease-in-out 0.25s;
+        width: 1.5rem;
+      }
+    }
+  }
+
+  ul {
+    padding-inline-start: 0;
+
+    li {
+      display: inline-flex;
+      justify-content: space-around;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
