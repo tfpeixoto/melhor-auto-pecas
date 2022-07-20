@@ -6,10 +6,3 @@ var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
 ctaMenu.addEventListener('click', () => {
   myModal.show();
 })
-
-jQuery(document).ready(function () {
-  jQuery('.owl-carousel').owlCarousel({
-    items: 3,
-    loop: true
-  });
-});

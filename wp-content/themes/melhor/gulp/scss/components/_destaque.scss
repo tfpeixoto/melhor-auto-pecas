@@ -22,14 +22,17 @@
   }
 
   .pecas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem;
-    padding: 100px 150px;
+    margin: 4rem 0;
 
     &__box {
       background: white;
       color: $default;
+      margin: 0 2rem;
+
+      img{
+        height: auto;
+        max-width: 100%;
+      }
 
       h3 {
         color: $primary;
@@ -45,9 +48,9 @@
       }
     }
 
-    &__name{
+    &__name {
       border-left: 10px solid $secondary;
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
       max-height: 100%;
       padding: 5px 0 5px 10px;
     }

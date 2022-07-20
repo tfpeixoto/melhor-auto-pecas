@@ -58,41 +58,38 @@ require_once("header.php");
       </div>
     </div>
 
-    <div class="row justify-content-center destaque__pecas pecas">
-      <div class="owl-carousel">
-        <?php
-        $args = array(
-          'post_type' => 'pecas',
-          'posts_per_page' => -1
-        );
-        $pecas = new WP_Query($args);
+    <div class="row justify-content-center destaque__pecas pecas slider">
+      <?php
+      $args = array(
+        'post_type' => 'pecas',
+        'posts_per_page' => -1
+      );
+      $pecas = new WP_Query($args);
+      if ($pecas->have_posts()) : while ($pecas->have_posts()) : $pecas->the_post(); ?>
 
-        if ($pecas->have_posts()) : while ($pecas->have_posts()) : $pecas->the_post(); ?>
+          <div class="pecas__box">
+            <?php the_post_thumbnail(); ?>
 
-            <div class="pecas__box">
-              <?php the_post_thumbnail(); ?>
+            <div class="pecas__name">
+              <?php
+              $post_tags = get_the_tags();
 
-              <div class="pecas__name">
-                <?php
-                $post_tags = get_the_tags();
-
-                if ($post_tags) {
-                  echo "<h3>";
-                  echo $post_tags[0]->name;
-                  echo "</h3>";
-                }
-                ?>
-                <p><?php the_title(); ?></p>
-              </div>
+              if ($post_tags) {
+                echo "<h3>";
+                echo $post_tags[0]->name;
+                echo "</h3>";
+              }
+              ?>
+              <p><?php the_title(); ?></p>
             </div>
+          </div>
 
-          <?php endwhile;
-        else : ?>
+        <?php endwhile;
+      else : ?>
 
-          <p>Não há peças publicados</p>
+        <p>Não há peças publicados</p>
 
-        <?php endif; ?>
-      </div>
+      <?php endif; ?>
     </div>
 
     <div class="row justify-content-center">
