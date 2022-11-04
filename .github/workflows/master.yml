@@ -19,8 +19,8 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_SECRET }}
           server-dir: public_html/
-          exclude: | 
-            **/wp-content/uploads/**
-            **/node_modules/**
-            **/tmpnodejsnpm-cache/**
-            .htaccess
+          # exclude: | 
+          #   **/wp-content/uploads/**
+          #   **/node_modules/**
+          #   **/tmpnodejsnpm-cache/**
+          #   .htaccess
