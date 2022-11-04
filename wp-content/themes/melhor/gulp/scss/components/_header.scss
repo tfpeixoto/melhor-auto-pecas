@@ -3,15 +3,25 @@
     a {
       color: $primary;
       font-weight: 600;
-      transition: all ease-in-out .25s;
+      transition: all ease-in-out 0.25s;
 
-      &:hover{
+      &:hover {
         color: $secondary;
       }
     }
   }
 
+  button{
+    display: none;
+  }
+
   &__contact {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+
     ul {
       display: inline-flex;
       margin-bottom: 0;
@@ -23,15 +33,15 @@
 
         a {
           color: $primary;
-          font-size: 1rem;
+          font-size: .85rem;
           font-weight: 800;
           text-decoration: none;
-          transition: all ease-in-out .25s;
+          transition: all ease-in-out 0.25s;
 
-          &:hover{
+          &:hover {
             color: $secondary;
 
-            svg{
+            svg {
               fill: $secondary;
             }
           }
@@ -50,10 +60,11 @@
     flex-grow: initial !important;
 
     a {
+      font-size: .85rem;
       text-transform: uppercase;
-      transition: all ease-in-out .25s;
+      transition: all ease-in-out 0.25s;
 
-      &:hover{
+      &:hover {
         color: $secondary;
       }
     }
@@ -61,11 +72,16 @@
 
   &__cta {
     align-items: center;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
 
     .btn {
       border: 0;
       display: inline-flex;
-      font-size: 1rem;
+      font-size: .85rem;
       padding: 0;
 
       &__label {
@@ -76,7 +92,7 @@
         background: $secondary;
         display: block;
         height: 100%;
-        padding: 1rem;
+        padding: 1rem .75rem;
         min-width: 50px;
 
         .icon {
