@@ -23,9 +23,9 @@ require_once("header.php");
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
 
-            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <a href="https://wa.me/+5531975326033" class="btn" target="_blank">
               <div class="btn__label">
-                Solicite um orçamento
+                Fale com um consultor
               </div>
 
               <div class="btn__icon">
@@ -97,9 +97,9 @@ require_once("header.php");
         <p><strong>Não encontrou o que procura?</strong><br />
           Podemos te ajudar! Solicite um orçamento e iremos em busca das peças que você precisa.</p>
 
-        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+        <a href="https://wa.me/+5531975326033" class="btn" target="_blank">
           <div class="btn__label">
-            Solicite um orçamento
+            Fale com um consultor
           </div>
 
           <div class="btn__icon">
@@ -163,9 +163,9 @@ require_once("header.php");
 
             <?php the_content(); ?>
 
-            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <a href="https://wa.me/+5531975326033" class="btn" target="_blank">
               <div class="btn__label">
-                Solicite um orçamento
+                Fale com um consultor
               </div>
 
               <div class="btn__icon">
@@ -260,9 +260,9 @@ require_once("header.php");
       </div>
 
       <div class="col-12 col-md-6 col-lg-4 cta__button">
-        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+        <a href="https://wa.me/+5531975326033" class="btn" target="_blank">
           <div class="btn__label">
-            Solicite um orçamento
+            Fale com um consultor
           </div>
 
           <div class="btn__icon">

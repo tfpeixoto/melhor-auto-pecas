@@ -78,9 +78,9 @@
         ?>
 
         <div class="header__cta">
-          <a href="#" class="btn header__cta" data-bs-toggle="modal" data-bs-target="#myModal">
+          <a href="https://wa.me/+5531975326033" class="btn header__cta">
             <div class="btn__label">
-              Solicite um orçamento
+              Fale com um consultor
             </div>
 
             <div class="btn__icon">
