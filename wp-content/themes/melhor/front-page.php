@@ -18,7 +18,7 @@ require_once("header.php");
 
       if ($institucional->have_posts()) : while ($institucional->have_posts()) : $institucional->the_post(); ?>
 
-          <div class="col-12 col-md-4 hero__puv">
+          <div class="col-12 col-lg-4 hero__puv">
 
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
@@ -36,7 +36,7 @@ require_once("header.php");
             </a>
           </div>
 
-          <div class="col-12 col-md-8 hero__image">
+          <div class="col-12 col-lg-8 hero__image">
             <?php the_post_thumbnail(); ?>
           </div>
 
@@ -215,11 +215,11 @@ require_once("header.php");
 </section>
 
 <section id="localizacao" class="mapa">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002.680571856581!2d-43.994284620707894!3d-19.938300385583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697bdd3f6acff%3A0x9e73c77c71a89a0f!2sMelhor%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1652831195786!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe title="Mapa de como chegar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002.680571856581!2d-43.994284620707894!3d-19.938300385583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697bdd3f6acff%3A0x9e73c77c71a89a0f!2sMelhor%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1652831195786!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-5 mapa__box">
+      <div class="col-12 col-lg-5 mapa__box">
         <h3>Visite nossa loja</h3>
         <p>Av. Tereza Cristina, 5.600 . Nova Gameleira<br />
           Belo Horizonte/MG, CEP 30516-120<br />
@@ -255,11 +255,11 @@ require_once("header.php");
 <section class="cta">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-6 cta__frase">
+      <div class="col-12 col-md-6 col-lg-8 cta__frase">
         <p>Solicite um orçamento sem compromisso agora mesmo, responderemos o mais breve possível.</p>
       </div>
 
-      <div class="col-12 col-md-4 cta__button">
+      <div class="col-12 col-md-6 col-lg-4 cta__button">
         <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
           <div class="btn__label">
             Solicite um orçamento

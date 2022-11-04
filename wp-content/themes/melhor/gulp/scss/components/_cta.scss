@@ -26,6 +26,11 @@
   &__button {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
 
     .btn {
       border: 0;

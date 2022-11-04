@@ -96,10 +96,10 @@
   }
 
   &__copy {
-    display: flex;
-    align-items: center;
-
+    
     @include media-breakpoint-up(md) {
+      align-items: center;
+      display: flex;
       margin-bottom: 0;
     }
 
